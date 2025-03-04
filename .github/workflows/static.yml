@@ -28,7 +28,8 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-
+    
+    using: "composite"
     steps:
         - uses: actions/checkout@v4
         - run: ${{github.action_path}}/deploy.sh # запустить скрип
