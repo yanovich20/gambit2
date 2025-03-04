@@ -30,4 +30,4 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-       =  run: ./github/workflows/deploy.sh # запустить скрипт 
+     =  run: ./github/workflows/deploy.sh # запустить скрипт 
