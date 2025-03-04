@@ -31,4 +31,4 @@ jobs:
 
     steps:
         - uses: actions/checkout@v4
-        - run: ./gambit2/.github/workflows/deploy.sh # запустить скрип
+        - run: /yanovich20/gambit2/.github/workflows/deploy.sh # запустить скрип
