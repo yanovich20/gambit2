@@ -30,4 +30,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-        - run: ./deploy.sh # запустить скрип
+        - uses: actions/checkout@v4
+        - run: ./gambit2/.github/workflows/deploy.sh # запустить скрип
