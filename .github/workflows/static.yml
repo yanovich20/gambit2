@@ -30,6 +30,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+          name: script
           with:
               repository: gambit2
               path: 'gambit2'
