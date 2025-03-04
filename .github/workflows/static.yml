@@ -30,7 +30,4 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-          with:
-              repository: gambit2
-              path: 'gambit2'
-        - run: /gambit2/./github/deploy.sh # запустить скрипт 
+         - run: /gambit2/./github/deploy.sh # запустить скрипт 
