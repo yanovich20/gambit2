@@ -15,21 +15,19 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+name: 'Hello World'
+description: 'Greet someone'
+runs:
+  using: "composite"
+  steps:
+    - name: Set Greeting
+      run: echo "Hello world!"
+      shell: bash
+      
+    - name: Set GitHub Path
+      run: echo "$GITHUB_ACTION_PATH" >> $GITHUB_PATH
+      shell: bash
 
-using: "composite"
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-        
-    steps:
-        - uses: actions/checkout@v4
-        - run: ${{github.action_path}}/deploy.sh # запустить скрип
+    - name: Run goodbye.sh
+      run: ${{ github.action_path }}/deploy.sh
+      shell: bash
