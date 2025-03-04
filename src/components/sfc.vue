@@ -79,6 +79,7 @@ function sortByThumbnailUrl(){
     }
     setSortBy(store.sortObj,sortByThumbnailUrlAsc,sortByThumbnailUrlDesc);
 }
+
 function setSortBy(sortObj,callbackAsc,callbackDesc){
     const store = listPhotos();
     if(store.sortObj.sortOrder==="asc")
