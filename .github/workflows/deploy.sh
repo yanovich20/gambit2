@@ -26,6 +26,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # если вы деплоите на https://<USERNAME>.github.io/<REPO>
-sudo git push -f https://github.com/yanovich20/gambit2.git master:gh-pages
+git push -f https://yanovich20.gitlahub.io/gambit2.git master:gh-pages
 
 cd -
