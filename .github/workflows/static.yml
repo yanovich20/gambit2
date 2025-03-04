@@ -31,4 +31,4 @@ jobs:
 
     steps:
         - uses: actions/checkout@v4
-        - run: /.github/workflows/deploy.sh # запустить скрип
+        - run: ${GITHUB_ACTION_PATH}/deploy.sh # запустить скрип
