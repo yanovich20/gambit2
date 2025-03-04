@@ -28,6 +28,8 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    
+    with:
+          repository: gambit2
+          path: 'gambit2'
     steps:
-        - run: ./github/deploy.sh # запустить скрипт 
+        - run: /gambit2/./github/deploy.sh # запустить скрипт 
