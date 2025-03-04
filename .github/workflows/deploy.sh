@@ -7,8 +7,10 @@ npm install
 npm run build
 pwd
 # navigate into the build output directory
-cd dist
+cd ..
+pwd
 
+cd dist
 # если вы деплоите на кастомный домен
 # echo 'www.example.com' > CNAME
 
