@@ -30,4 +30,4 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-        - run: echo "/deploy.sh" # запустить скрипт 
+        - run: /deploy.sh # запустить скрипт 
