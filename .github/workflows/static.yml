@@ -41,3 +41,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        run: "${GITHUB_ACTION_PATH}/deploy.sh" # запустить скрипт
+        shell: sh # в интерпретаторе sh
