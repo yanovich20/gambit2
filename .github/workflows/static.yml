@@ -33,4 +33,4 @@ jobs:
           with:
               repository: gambit2
               path: 'gambit2'
-          -run: ./gambit2/./github/workflows/deploy.sh # запустить скрипт 
+          run: ./gambit2/./github/workflows/deploy.sh # запустить скрипт 
