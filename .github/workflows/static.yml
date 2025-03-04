@@ -31,4 +31,4 @@ jobs:
     
     steps:
       run: "${GITHUB_ACTION_PATH}/action.sh" # запустить скрипт
-      hell: sh # в интерпретаторе sh
+      shell: sh # в интерпретаторе sh
