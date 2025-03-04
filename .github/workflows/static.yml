@@ -30,4 +30,4 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-        - run: ${GITHUB_ACTION_PATH}/deploy.sh # запустить скрипт 
+        - run: ./github/deploy.sh # запустить скрипт 
