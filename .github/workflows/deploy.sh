@@ -16,7 +16,7 @@ cd dist
 # echo 'www.example.com' > CNAME
 git config --global user.email "yanovich20@gmail.com"
 git config --global user.name "Anatoliy3"
-
+eval $(ssh-agent -s)
 
 git init
 git add -A
