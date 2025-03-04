@@ -8,19 +8,16 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
 jobs:
-  nameofjob:
-    name: A job to spin up a Postgres service and migrate it.
+  example-job:
     runs-on: ubuntu-latest
-runs:
-  using: "composite"
-  steps:
-    - name: Set GitHub Path
-      run: echo "$GITHUB_ACTION_PATH" >> $GITHUB_PATH
-      shell: bash
-      env:
-        GITHUB_ACTION_PATH: ${{ github.action_path }}
-
-    - name: Run goodbye.sh
-      run: deploy.sh
-      shell: bash
+    defaults:
+      run:
+        working-directory: ./.github/workflows/
+    steps:
+      - name: Check out the repository to the runner
+        uses: actions/checkout@v4  
+        name: Make the script files executable
+        run: chmod +x deploy.sh
+      - name: Run a script
+        run: ./deploy.sh
 
