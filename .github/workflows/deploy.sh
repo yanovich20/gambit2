@@ -15,7 +15,7 @@ cd dist
 # если вы деплоите на кастомный домен
 # echo 'www.example.com' > CNAME
 git config --global user.email "yanovich20@gmail.com"
-git config --global user.name "Anatoliy2"
+git config --global user.name "Anatoliy3"
 
 
 git init
