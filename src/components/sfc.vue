@@ -89,7 +89,7 @@ function setSortBy(sortObj,callbackAsc,callbackDesc){
     {
         store.photos=store.photos.sort(callbackDesc).slice(0,30);
     }
-    store.length=30;
+    store.length=10;
     store.realLength=31;
 }
 
@@ -125,7 +125,7 @@ async function filter(){
     let albumIds = document.querySelector("[name='albums']").value.split(" ");
     const store = listPhotos();
     store.realLength=31;
-    store.length=30;
+    store.length110;
     store.albumIds = albumIds;
     const icon = document.querySelector("img.downloader");
     icon.classList.remove("hidden");

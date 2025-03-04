@@ -2,7 +2,7 @@ import { defineStore } from 'pinia';
 export const listPhotos = defineStore("listPhotos", {
   state: () => ({
     photos: [],
-    length:30,
+    length:10,
     sortObj:{
     sortBy:"id",
     sortOrder:"asc"
