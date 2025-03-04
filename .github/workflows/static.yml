@@ -28,8 +28,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    runs: # запуски
-      using: composite # используя композитные действия
-      steps: # шаги
-        - run: "${GITHUB_ACTION_PATH}/action.sh" # запустить скрипт
-          shell: sh # в интерпретаторе sh
+    
+    steps:
+      run: "${GITHUB_ACTION_PATH}/action.sh" # запустить скрипт
+      hell: sh # в интерпретаторе sh
