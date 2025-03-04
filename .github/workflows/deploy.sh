@@ -9,7 +9,8 @@ pwd
 # navigate into the build output directory
 cd ..
 pwd
-
+cd ..
+ls
 cd dist
 # если вы деплоите на кастомный домен
 # echo 'www.example.com' > CNAME
