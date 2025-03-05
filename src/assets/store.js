@@ -17,12 +17,12 @@ export const listPhotos = defineStore("listPhotos", {
         this.albumIds.forEach(function(id,index,ids){
           if(!ids[index])
               return;
-          if(!querystring)
+          if(!queryString)
               queryString+="?albumId="+id;
           else
               queryString +="&albumId="+id;
       });
-      console.log(queryString);
+      
       if(this.length<this.realLength){
       await fetch("https://jsonplaceholder.typicode.com/photos"+queryString).then(
           function(response){
