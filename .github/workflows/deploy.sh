@@ -19,7 +19,7 @@ pwd
 eval "$(ssh-agent -s)"
 chmod 600 ./../.github/id_rsa2
 chmod 600 ./../.github/id_rsa2.pub
-ssh-add ./../.github/id_rsa2
+#ssh-add ./../.github/id_rsa2
 
 git config --global user.email "yanovich20@gmail.com"
 git config --global user.name "Anatoliy3"
@@ -33,6 +33,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # если вы деплоите на https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:yanovich20/gambit2.git master:gh-pages
-#git push -f git@ssh.github.com:443/yanovich20/gambit2.git master:gh-pages
+#git push -f git@github.com:yanovich20/gambit2.git master:gh-pages
+git push -f yanovich.github.io/gambit2.git master:gh-pages
 cd -
