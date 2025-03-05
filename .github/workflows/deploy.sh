@@ -34,5 +34,5 @@ git commit -m 'deploy'
 
 # если вы деплоите на https://<USERNAME>.github.io/<REPO>
 #git push -f git@github.com:yanovich20/gambit2.git master:gh-pages
-git push -f yanovich20.github.io/gambit2.git master:gh-pages
+git push -f https://yanovich20.github.io/gambit2/ master:gh-pages
 cd -
