@@ -11,11 +11,14 @@ cd ..
 pwd
 cd ..
 ls
-eval "$(ssh-agent -s)"
-ssh-add /.github/id_rsa2
+
 cd dist
 # если вы деплоите на кастомный домен
 # echo 'www.example.com' > CNAME
+pwd
+eval "$(ssh-agent -s)"
+ssh-add ../.github/id_rsa2
+
 git config --global user.email "yanovich20@gmail.com"
 git config --global user.name "Anatoliy3"
 
