@@ -11,11 +11,14 @@ cd ..
 pwd
 cd ..
 ls
+eval "$(ssh-agent -s)"
+ssh-add /.github/id_rsa2
 cd dist
 # если вы деплоите на кастомный домен
 # echo 'www.example.com' > CNAME
 git config --global user.email "yanovich20@gmail.com"
 git config --global user.name "Anatoliy3"
+
 
 git init
 git add -A
@@ -25,6 +28,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # если вы деплоите на https://<USERNAME>.github.io/<REPO>
-#git push -f git@github.com:yanovich20/gambit2.git master:gh-pages
-git push -f git@ssh.github.com:443/yanovich20/gambit2.git master:gh-pages
+git push -f git@github.com:yanovich20/gambit2.git master:gh-pages
+#git push -f git@ssh.github.com:443/yanovich20/gambit2.git master:gh-pages
 cd -
