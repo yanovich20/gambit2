@@ -17,9 +17,9 @@ cd dist
 # echo 'www.example.com' > CNAME
 pwd
 eval "$(ssh-agent -s)"
-chmod 644 ~/.ssh/id_rsa2
-chmod 644 ~/.ssh/id_rsa2.pub
-ssh-add ../.github/id_rsa2
+chmod 644 ./../.github/id_rsa2
+chmod 644 ./../.github/id_rsa2.pub
+ssh-add ./../.github/id_rsa2
 
 git config --global user.email "yanovich20@gmail.com"
 git config --global user.name "Anatoliy3"
